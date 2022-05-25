@@ -1,0 +1,102 @@
+body{
+    background-color: greenyellow;
+    margin: 0px;
+}
+.cards{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+}
+.card{
+    height: 100px;
+    width: 100px;
+    margin:30px;
+    padding: 10px;
+}
+.card1{
+    background-color: #3d7e6f;
+    animation:alternate-reverse ranjeet 3s infinite 1s;
+}
+@keyframes ranjeet {
+    from{
+         transform:skewX(20deg);
+    }
+    to{
+        transform:skewX(-20deg);
+    }
+
+}
+.card2{
+    background-color: #acacac;
+    animation:alternate-reverse ranjeet1 2s infinite 0s;
+
+}
+@keyframes ranjeet1{
+    from{
+         transform:skewY(20deg);
+    }
+    to{
+        transform:skewY(-20deg);
+    }
+
+}
+.card3{
+    background-color: #3d7e6f;
+    animation:normal ranjeet2 3s infinite 0s;
+}
+@keyframes ranjeet2{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+.card4{
+    background-color: #3d7e6f;
+    border: 3px solid #10765e;
+    animation:alternate ranjeet3 4s infinite 0s;
+}
+@keyframes ranjeet3{
+    from{
+        transform: rotateX(60deg);
+    }
+    to{
+        transform: rotateX(-60deg);
+    }
+}
+.card5{
+    background-color: brown;
+    border: 3px solid #752b2b;
+    animation:alternate ranjeet4 4s infinite 0s;
+}
+@keyframes ranjeet4{
+    from{
+        transform: rotateY(70deg);
+    }
+    to{
+         transform: rotateY(-70deg);
+    }   
+}
+.card6{
+    background-color:green;
+    border: 3px solid #1f712b;
+    animation: alternate ranjeet5 2s infinite 0s;
+}
+@keyframes ranjeet5{
+    from{
+        transform: rotateZ(10deg);
+    }
+    to{
+        transform: rotateZ(-90deg);
+    }
+}
+.heading{
+    font-size: xx-large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
